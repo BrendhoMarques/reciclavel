@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Estilização geral do site */
 body {
     background-color: rgb(255, 255, 255);
@@ -206,3 +207,213 @@ footer {
     bottom: 0;
     font-size: 0.6cm;
 }
+=======
+/* Estilização geral do site */
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #025f02, #02b461);
+    /*background-color: rgb(5, 92, 27);*/
+    color: #ffffff;
+    padding: 10px 0px;
+    text-align: left;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0px;
+    font-size: 1.2cm;
+}
+
+nav ul {
+    backgroundcolor: #088508,;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav li:first-child{
+    margin-left: 0;
+    text-align: end;
+}
+nav li :only-child{
+    background-color: rgb(11, 133, 0);
+    padding: 0px 20px;
+
+}
+
+
+nav a {
+    color: #faf4f4;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 0.6cm;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:hover, nav a:focus{
+    color: rgb(64, 253, 64);
+}
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilização do cabeçalho das páginas */
+.cabecalho {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+/* Estilização para a tabela de pontos de coleta */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Estilização para botões */
+button {
+    background-color: #01578a;
+    color: white;
+    border-radius: 4px;
+    height: 1.2cm;
+    width: 3cm;
+    cursor: pointer;
+}
+
+/*
+input, textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    border-radius: 0.1cm;
+    width: 100%;
+    height: 0.5cm;
+    font-size: 0.7cm;
+    padding: 0.2cm;
+}
+*/
+textarea {
+    width: 100%;
+    height: 10cm;
+    font-size: 0.7cm;
+    padding: 0.2cm;
+}
+
+/* Estilização para a página de pontos de coleta */
+.sobreMim, .interesses, .objetivos {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 15px 13px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.projeto {
+    font-size: 0.7cm;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.projeto li {
+    list-style: lower-latin;
+    border-bottom: none;
+    margin-bottom: 10px;
+    margin: 0;
+}
+
+.projeto a {
+    color: #0f3b55;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização do contêiner do mapa */
+.map-container {
+    width: 1000px; /* Defina a largura desejada do contêiner */
+    height: 600px; /* Defina a altura desejada do contêiner */
+    margin: 20px auto; /* Centraliza o contêiner horizontalmente */
+    border: 1px solid #ccc; /* Adiciona uma borda ao contêiner */
+    border-radius: 8px; /* Adiciona bordas arredondadas se desejado */
+    overflow: hidden; /* Garante que o mapa não ultrapasse os limites do contêiner */
+}
+
+.txtv{/*Estilização para os textos nas páginas*/
+    font-family: sans-serif;
+    font-size: 0.7cm;
+    font-weight: 100;
+}
+
+
+/* Estilização do mapa */
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    width: 100%;
+    background: linear-gradient(90deg, #025f02, #02b461);
+    background-color: #003f10;
+    color: #fff1f1;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    font-size: 0.6cm;
+}
+>>>>>>> 8f4c7ee94c8d7fdb0bbcaaf370dad5144812a8dd
