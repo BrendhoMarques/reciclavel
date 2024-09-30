@@ -63,48 +63,44 @@ main {
     margin: auto;
 }
 
+/* Estilos para o menu */
+nav.menu {
+    display: flex;
+    justify-content: space-between;
+}
 
-#navbar{/*Menu para Mobiles*/
-    display: none;
-    flex-direction: colune;
+nav.menu ul {
+    display: flex;
+    gap: 10px;
 }
 
 .menuMob {
-    font-size: 30px;
+    display: none; /* Ocultar o botão em telas grandes */
+    font-size: 1.5em;
     background: none;
     border: none;
-    color: #333;
     cursor: pointer;
-    display: none; /* Esconde o botão em telas grandes */
-
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    nav.menu {
+        display: none; /* Ocultar menu por padrão em mobile */
+    }
+
+    .menu.active {
+        display: block; /* Exibir o menu quando ativado */
+    }
+
     .menuMob {
-        display: block;
+        display: block; /* Exibir botão hamburguer em mobile */
     }
-    nav ul {
-        display: flex;
+
+    nav.menu ul {
         flex-direction: column;
-        background-color: #f4f4f4;
-        padding: 10px;
-        border-radius: 8px;
-        margin: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    #barra {
-        display: none; /* Escondido inicialmente */
-    }
-
-    /* Mostrar o menu quando o JS o habilitar */
-    #barra.active {
-        display: flex;
+        gap: 20px;
     }
 }
+
 
 /* Estilização do cabeçalho das páginas */
 .cabecalho {
