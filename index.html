@@ -13,9 +13,10 @@
 <body>
     <!-- Cabeçalho da página "Home" -->
     <header class="cabecalho">
+        <button class="menuMob" onclick="toggleMenu()">&#9776;</button>
         <div>
             <h1>Home</h1>
-            <nav>
+            <nav id="barra">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pontos.html">Pontos</a></li>
@@ -52,6 +53,15 @@
     <footer style="position: fixed;">
         <p>&copy; 2024. Direitos reservados a Brendho Marques</p>
     </footer>
+
+    <script>
+        function menuHamburguer() {
+            var navbar = document.getElementById("barra");
+            barra.classList.toggle("active");
+        }
+    </script>
+    
+
 
 </body>
 </html>

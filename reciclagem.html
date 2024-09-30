@@ -12,7 +12,8 @@
     <header class="cabecalho"> <!--Classe cabecalho tem a finalidade de estilizar o cabecalho da página -->
         <div>
             <h1>Reciclagem</h1>
-            <nav><!--Navegação do site que fica no topo da página-->
+            <button class="menuMob" onclick="toggleMenu()">&#9776;</button>
+            <nav id="barra"><!--Navegação do site que fica no topo da página-->
                 <ul>
                     <li><a href="index.html">Home</a> </li><!--Redireciona o usuário à página "Sobre Mim"-->
                     <li><a href="pontos.html">Pontos</a></li><!--Redireciona o usuário à página "Formação"-->
@@ -83,4 +84,13 @@
     <footer>
         <p>&copy; 2024. Direitos reservados a Brendho Marques</p>
     </footer>
+
+    <script>
+       function menuHamburguer() {
+            var navbar = document.getElementById("barra");
+            barra.classList.toggle("active");
+        }
+    </script>
+    
+
 </body>
